@@ -63,7 +63,7 @@ const Dashboard = () => {
     <div className="flex min-h-screen bg-gray-50">
       <Sidebar />
       
-      <main className="flex-1 p-6 lg:p-8 overflow-auto">
+      <main className="flex-1 ml-20 lg:ml-64 p-6 lg:p-8 overflow-auto">
         {/* Header */}
         <div className="mb-8">
           <h1 className="text-3xl lg:text-4xl font-bold text-gray-900">Dashboard Overview</h1>

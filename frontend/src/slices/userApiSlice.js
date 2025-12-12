@@ -11,7 +11,13 @@ export const appApiSlice = apiSlice.injectEndpoints({
                 body: body,
             })
         }),
+        getProjects: builder.query({
+            query: () => ({
+                url: `${APP_URL}/projects`,
+                method: 'GET',
+            })
+        })
     })
 }); 
 
-export const {useUserMessageMutation} = appApiSlice;
+export const {useUserMessageMutation, useGetProjectsQuery} = appApiSlice;

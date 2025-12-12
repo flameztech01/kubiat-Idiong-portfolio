@@ -8,13 +8,23 @@ import store from './store.js'
 import Homescreen from './screens/Homescreen.jsx';
 import Login from './adminScreen/Login.jsx';
 import Dashboard from './adminScreen/Dashboard.jsx';
+import Messages from './adminComponents/Messages.jsx';
+import ViewMessage from './adminComponents/Viewmessage.jsx';
+import Projects from './adminComponents/Projects.jsx';
+import Uploadproject from './adminComponents/Uploadproject.jsx';
+import EditProject from './adminScreen/EditProject.jsx';
 
 
 const router = createBrowserRouter([
   {path: '/', element: <App />, children: [
     {index: true, element: <Homescreen />},
     {path: '/admin/login', element: <Login />},
-    {path: '/admin/dashboard', element: <Dashboard />}
+    {path: '/admin/dashboard', element: <Dashboard />},
+    {path: 'admin/messages', element: <Messages />},
+    {path: `/admin/messages/:id`, element: <ViewMessage /> },
+    {path: '/admin/project/upload', element: <Uploadproject /> },
+    {path: '/admin/projects', element: <Projects /> },
+    {path: '/admin/project/edit/:id', element: <EditProject /> },
   ]}
 ])
 

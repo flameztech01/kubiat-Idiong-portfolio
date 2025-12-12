@@ -1,8 +1,10 @@
 import express from 'express';
-import { postMessage } from "../controller/messageController.js";
+import { postMessage, getProjects } from "../controller/messageController.js";
 
 const router = express.Router();
 
 router.post('/message', postMessage);
+
+router.get('/projects', getProjects);
 
 export default router;

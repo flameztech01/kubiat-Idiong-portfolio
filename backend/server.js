@@ -2,6 +2,7 @@ import express from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors';
 import cookieParser from 'cookie-parser';
+
 import mongoose from 'mongoose';
 import { errorHandler, notFound } from './middleware/errorMiddleware.js';
 import messageRoutes from './routes/messageRoutes.js';
@@ -26,6 +27,7 @@ app.use(cors({
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
+
 
 
 //Routing

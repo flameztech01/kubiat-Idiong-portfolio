@@ -54,10 +54,12 @@ export const adminApiSlice = apiSlice.injectEndpoints({
 
     //upload projects
     uploadProjects: builder.mutation({
-      query: () => ({
-        url: `${ADMIN_URL}/upload`,
+      query: (formData) => ({
+        url: `${ADMIN_URL}/upload`, // Changed from '/upload' to '/projects'
         method: "POST",
-      })
+        body: formData, // ✅ Added the formData parameter
+        // ⚠️ Don't set Content-Type header - let browser handle it for FormData
+      }),
     }),
 
     //fetch projects
@@ -65,24 +67,26 @@ export const adminApiSlice = apiSlice.injectEndpoints({
       query: () => ({
         url: `${ADMIN_URL}/project`,
         method: "GET",
-      })
+      }),
     }),
 
     //Edit projects
+    // In adminApiSlice.js - CHANGE THIS
     editProject: builder.mutation({
-      query: (project) => ({
-        url: `${ADMIN_URL}/projects/${project.id}`,
+      query: ({ id, data }) => ({
+        // <-- Destructure id and data
+        url: `${ADMIN_URL}/project/${id}`,
         method: "PUT",
-        body: project,
-      })
+        body: data,
+      }),
     }),
     //Delete projects
     deleteProject: builder.mutation({
       query: (projectId) => ({
-        url: `${ADMIN_URL}/projects/${projectId}`,
+        url: `${ADMIN_URL}/project/${projectId}`,
         method: "DELETE",
-      })
-    })
+      }),
+    }),
   }),
 });
 
@@ -96,5 +100,5 @@ export const {
   useUploadProjectsMutation,
   useFetchProjectsQuery,
   useEditProjectMutation,
-  useDeleteProjectMutation
+  useDeleteProjectMutation,
 } = adminApiSlice;
