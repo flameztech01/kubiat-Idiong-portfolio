@@ -102,7 +102,7 @@ const About = () => {
                     As a <span className="font-medium text-slate-900">Full-Stack Developer</span> and <span className="font-medium text-slate-900">Digital Creative</span>, I specialize in architecting comprehensive solutions that seamlessly integrate technical excellence with strategic vision. My work spans from complex web applications to compelling brand narratives.
                   </p>
                   <p className="text-slate-700 leading-relaxed text-lg font-light">
-                    With leadership roles at <span className="font-medium text-slate-900">Flamez Tech</span> and <span className="font-medium text-slate-900">FlamezGrafx</span>, complemented by collaborations with industry innovators, I bring a balanced perspective that values both innovation and practical execution.
+                    With leadership roles at <span className="font-medium text-slate-900">FlamezTech</span>, complemented by collaborations with industry innovators, I bring a balanced perspective that values both innovation and practical execution.
                   </p>
                 </div>
               </div>
