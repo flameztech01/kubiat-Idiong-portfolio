@@ -8,27 +8,27 @@ const Hero = () => {
     { 
       name: 'LinkedIn', 
       icon: <FiLinkedin className="w-4 h-4" />, 
-      url: 'https://linkedin.com/in/njokusamuel'
+      url: 'https://www.linkedin.com/in/samuel-njoku-a43153389/'
     },
     { 
       name: 'GitHub', 
       icon: <FiGithub className="w-4 h-4" />, 
-      url: 'https://github.com/njokusamuel'
+      url: 'https://github.com/flameztech01'
     },
     { 
       name: 'Dribbble', 
       icon: <FaDribbble className="w-4 h-4" />, 
-      url: 'https://dribbble.com/njokusamuel'
+      url: 'https://dribbble.com/samuel-njoku'
     },
     { 
       name: 'Behance', 
       icon: <FaBehance className="w-4 h-4" />, 
-      url: 'https://behance.net/njokusamuel'
+      url: 'https://www.behance.net/samuelnjoku3'
     },
     { 
       name: 'Twitter', 
       icon: <FiTwitter className="w-4 h-4" />, 
-      url: 'https://twitter.com/njokusamuel'
+      url: 'https://x.com/flameztech01'
     },
   ];
 
