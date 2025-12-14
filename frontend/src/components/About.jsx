@@ -16,7 +16,7 @@ const About = () => {
     {
       icon: <FiCode className="w-5 h-5" />,
       title: "Full-Stack Development",
-      description: "MERN Stack, Next.js, TypeScript, REST APIs"
+      description: "MERN Stack, Next.js, JavaScript, REST APIs"
     },
     {
       icon: <FiPenTool className="w-5 h-5" />,
