@@ -17,9 +17,7 @@ const MONGO_URL = process.env.MONGO_URL;
 app.use(cors({
     origin: [
         'http://localhost:3000',
-        'https://njoku-samuel-portfolio.onrender.com',
-        'https://www.flameztech.online',
-        'https://flameztech.online'
+        'https://kubiat-idiong-portfolio-1.onrender.com',
     ],
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
