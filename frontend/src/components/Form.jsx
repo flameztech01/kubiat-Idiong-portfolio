@@ -41,11 +41,12 @@ const Form = () => {
     };
 
     return (
-        <section className="py-16 lg:py-24 bg-gradient-to-b from-white to-slate-50/30 relative overflow-hidden">
-            {/* Background decorative elements */}
-            <div className="absolute inset-0 opacity-[0.02]">
-                <div className="absolute top-1/3 left-10 w-96 h-96 rounded-full bg-gradient-to-r from-amber-400 to-indigo-400 blur-3xl"></div>
-                <div className="absolute bottom-1/3 right-10 w-96 h-96 rounded-full bg-gradient-to-l from-indigo-400 to-amber-400 blur-3xl"></div>
+        <section className="py-16 lg:py-24 bg-gradient-to-b from-slate-900 to-slate-800 relative overflow-hidden">
+            {/* Geometric background */}
+            <div className="absolute inset-0 opacity-10">
+                <div className="absolute top-0 left-1/4 w-96 h-96 border-2 border-cyan-500/20 rounded-full -translate-x-1/2 -translate-y-1/2"></div>
+                <div className="absolute bottom-0 right-1/4 w-96 h-96 border-2 border-purple-500/20 rounded-full translate-x-1/3 translate-y-1/3"></div>
+                <div className="absolute top-1/2 left-1/2 w-64 h-64 border border-cyan-500/10 rotate-45"></div>
             </div>
 
             <div className="max-w-6xl mx-auto px-5 sm:px-8 lg:px-10 relative z-10">
@@ -53,44 +54,46 @@ const Form = () => {
                     {/* Left Content */}
                     <div className="lg:sticky lg:top-8">
                         <div className="space-y-8">
-                            <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-slate-100/80 backdrop-blur-sm rounded-full border border-slate-200/50">
-                                <FiMessageSquare className="w-3 h-3 text-slate-600" />
-                                <span className="text-xs font-medium text-slate-600 tracking-wide">
+                            <div className="flex items-center gap-4">
+                                <div className="w-12 h-px bg-gradient-to-r from-transparent to-cyan-500"></div>
+                                <span className="text-cyan-400 text-sm font-medium tracking-widest uppercase">
                                     Direct Message
                                 </span>
+                                <div className="w-12 h-px bg-gradient-to-l from-transparent to-cyan-500"></div>
                             </div>
                             
-                            <h1 className="text-4xl lg:text-5xl font-light text-slate-900 font-serif">
-                                Send a <span className="font-semibold">Message</span>
+                            <h1 className="text-5xl lg:text-6xl font-bold tracking-tight text-white">
+                                Send a
+                                <span className="text-cyan-400"> Message</span>
                             </h1>
                             
-                            <div className="relative mb-4">
-                                <div className="w-24 h-0.5 bg-gradient-to-r from-amber-400/50 via-indigo-400/50 to-transparent"></div>
+                            <div className="flex mb-4">
+                                <div className="w-20 h-1 bg-gradient-to-r from-cyan-500 to-purple-500"></div>
                             </div>
                             
-                            <p className="text-lg text-slate-600 leading-relaxed font-light">
+                            <p className="text-lg text-slate-300 leading-relaxed">
                                 Share your ideas, project requirements, or questions. I value thoughtful communication and will respond with detailed, personalized feedback.
                             </p>
                             
                             {/* Additional Info */}
                             <div className="space-y-4 pt-6">
-                                <div className="flex items-center gap-3 text-slate-600 group">
-                                    <div className="w-10 h-10 bg-gradient-to-br from-amber-50 to-indigo-50 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                                        <FiClock className="w-5 h-5 text-amber-600" />
+                                <div className="flex items-center gap-4 group">
+                                    <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-cyan-500/10 to-purple-500/10 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300 border border-slate-700">
+                                        <FiClock className="w-6 h-6 text-cyan-400" />
                                     </div>
                                     <div>
-                                        <span className="font-medium text-slate-700">Response within 24 hours</span>
-                                        <p className="text-sm text-slate-500 font-light">Typically respond within one business day</p>
+                                        <span className="font-bold text-white">Response within 24 hours</span>
+                                        <p className="text-sm text-slate-400">Typically respond within one business day</p>
                                     </div>
                                 </div>
                                 
-                                <div className="flex items-center gap-3 text-slate-600 group">
-                                    <div className="w-10 h-10 bg-gradient-to-br from-indigo-50 to-amber-50 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                                        <FiLock className="w-5 h-5 text-indigo-600" />
+                                <div className="flex items-center gap-4 group">
+                                    <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-purple-500/10 to-cyan-500/10 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300 border border-slate-700">
+                                        <FiLock className="w-6 h-6 text-purple-400" />
                                     </div>
                                     <div>
-                                        <span className="font-medium text-slate-700">Secure and confidential</span>
-                                        <p className="text-sm text-slate-500 font-light">Your information is protected and private</p>
+                                        <span className="font-bold text-white">Secure and confidential</span>
+                                        <p className="text-sm text-slate-400">Your information is protected and private</p>
                                     </div>
                                 </div>
                             </div>
@@ -98,14 +101,14 @@ const Form = () => {
                     </div>
 
                     {/* Right Form */}
-                    <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 lg:p-10 border border-slate-200/60 shadow-sm">
+                    <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-xl p-8 lg:p-10 border border-slate-700 shadow-lg">
                         <form onSubmit={handleSubmit} className="space-y-8">
                             {/* Name Row */}
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                                 <div className="group">
-                                    <label htmlFor="firstName" className="block text-sm font-medium text-slate-700 mb-3">
+                                    <label htmlFor="firstName" className="block text-sm font-semibold text-slate-300 mb-3">
                                         <div className="flex items-center gap-2">
-                                            <FiUser className="w-4 h-4 text-slate-500" />
+                                            <FiUser className="w-4 h-4 text-cyan-400" />
                                             First Name *
                                         </div>
                                     </label>
@@ -116,13 +119,13 @@ const Form = () => {
                                         value={formData.firstName}
                                         onChange={handleChange}
                                         required
-                                        className="w-full px-4 py-3.5 bg-white/50 border border-slate-200/60 rounded-xl focus:border-slate-300 focus:ring-2 focus:ring-amber-400/20 focus:ring-offset-2 transition-all duration-300 placeholder:text-slate-400/70"
+                                        className="w-full px-4 py-3.5 bg-slate-800/50 border border-slate-700 rounded-lg focus:border-cyan-500/50 focus:ring-2 focus:ring-cyan-500/20 focus:ring-offset-2 focus:ring-offset-slate-900 transition-all duration-300 placeholder:text-slate-500 text-white"
                                         placeholder="Enter your first name"
                                     />
                                 </div>
                                 
                                 <div className="group">
-                                    <label htmlFor="lastName" className="block text-sm font-medium text-slate-700 mb-3">
+                                    <label htmlFor="lastName" className="block text-sm font-semibold text-slate-300 mb-3">
                                         Last Name *
                                     </label>
                                     <input
@@ -132,7 +135,7 @@ const Form = () => {
                                         value={formData.lastName}
                                         onChange={handleChange}
                                         required
-                                        className="w-full px-4 py-3.5 bg-white/50 border border-slate-200/60 rounded-xl focus:border-slate-300 focus:ring-2 focus:ring-indigo-400/20 focus:ring-offset-2 transition-all duration-300 placeholder:text-slate-400/70"
+                                        className="w-full px-4 py-3.5 bg-slate-800/50 border border-slate-700 rounded-lg focus:border-purple-500/50 focus:ring-2 focus:ring-purple-500/20 focus:ring-offset-2 focus:ring-offset-slate-900 transition-all duration-300 placeholder:text-slate-500 text-white"
                                         placeholder="Enter your last name"
                                     />
                                 </div>
@@ -140,9 +143,9 @@ const Form = () => {
 
                             {/* Email */}
                             <div className="group">
-                                <label htmlFor="email" className="block text-sm font-medium text-slate-700 mb-3">
+                                <label htmlFor="email" className="block text-sm font-semibold text-slate-300 mb-3">
                                     <div className="flex items-center gap-2">
-                                        <FiMail className="w-4 h-4 text-slate-500" />
+                                        <FiMail className="w-4 h-4 text-cyan-400" />
                                         Email Address *
                                     </div>
                                 </label>
@@ -153,14 +156,14 @@ const Form = () => {
                                     value={formData.email}
                                     onChange={handleChange}
                                     required
-                                    className="w-full px-4 py-3.5 bg-white/50 border border-slate-200/60 rounded-xl focus:border-slate-300 focus:ring-2 focus:ring-amber-400/20 focus:ring-offset-2 transition-all duration-300 placeholder:text-slate-400/70"
+                                    className="w-full px-4 py-3.5 bg-slate-800/50 border border-slate-700 rounded-lg focus:border-cyan-500/50 focus:ring-2 focus:ring-cyan-500/20 focus:ring-offset-2 focus:ring-offset-slate-900 transition-all duration-300 placeholder:text-slate-500 text-white"
                                     placeholder="your.email@example.com"
                                 />
                             </div>
 
                             {/* Subject */}
                             <div className="group">
-                                <label htmlFor="subject" className="block text-sm font-medium text-slate-700 mb-3">
+                                <label htmlFor="subject" className="block text-sm font-semibold text-slate-300 mb-3">
                                     Subject *
                                 </label>
                                 <input
@@ -170,16 +173,16 @@ const Form = () => {
                                     value={formData.subject}
                                     onChange={handleChange}
                                     required
-                                    className="w-full px-4 py-3.5 bg-white/50 border border-slate-200/60 rounded-xl focus:border-slate-300 focus:ring-2 focus:ring-indigo-400/20 focus:ring-offset-2 transition-all duration-300 placeholder:text-slate-400/70"
+                                    className="w-full px-4 py-3.5 bg-slate-800/50 border border-slate-700 rounded-lg focus:border-purple-500/50 focus:ring-2 focus:ring-purple-500/20 focus:ring-offset-2 focus:ring-offset-slate-900 transition-all duration-300 placeholder:text-slate-500 text-white"
                                     placeholder="What would you like to discuss?"
                                 />
                             </div>
 
                             {/* Message */}
                             <div className="group">
-                                <label htmlFor="message" className="block text-sm font-medium text-slate-700 mb-3">
+                                <label htmlFor="message" className="block text-sm font-semibold text-slate-300 mb-3">
                                     <div className="flex items-center gap-2">
-                                        <FiMessageSquare className="w-4 h-4 text-slate-500" />
+                                        <FiMessageSquare className="w-4 h-4 text-cyan-400" />
                                         Message *
                                     </div>
                                 </label>
@@ -190,7 +193,7 @@ const Form = () => {
                                     value={formData.message}
                                     onChange={handleChange}
                                     required
-                                    className="w-full px-4 py-3.5 bg-white/50 border border-slate-200/60 rounded-xl focus:border-slate-300 focus:ring-2 focus:ring-amber-400/20 focus:ring-offset-2 transition-all duration-300 placeholder:text-slate-400/70 resize-none"
+                                    className="w-full px-4 py-3.5 bg-slate-800/50 border border-slate-700 rounded-lg focus:border-cyan-500/50 focus:ring-2 focus:ring-cyan-500/20 focus:ring-offset-2 focus:ring-offset-slate-900 transition-all duration-300 placeholder:text-slate-500 text-white resize-none"
                                     placeholder="Share your project details, timeline, and any specific requirements..."
                                 />
                             </div>
@@ -199,9 +202,9 @@ const Form = () => {
                             <button
                                 type="submit"
                                 disabled={isLoading}
-                                className="group relative w-full bg-gradient-to-r from-slate-900 to-slate-800 hover:from-slate-800 hover:to-slate-700 disabled:from-slate-400 disabled:to-slate-500 text-white font-medium py-4 px-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden"
+                                className="group relative w-full bg-gradient-to-r from-cyan-500 to-purple-500 hover:opacity-90 disabled:from-slate-600 disabled:to-slate-700 text-white font-bold py-4 px-6 rounded-lg shadow-lg transition-all duration-300 overflow-hidden"
                             >
-                                <div className="absolute inset-0 bg-gradient-to-r from-amber-500/10 to-indigo-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                <div className="absolute inset-0 bg-gradient-to-r from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                                 
                                 {isLoading ? (
                                     <div className="relative z-10 flex items-center justify-center gap-3">
@@ -217,8 +220,8 @@ const Form = () => {
                             </button>
 
                             {/* Form Note */}
-                            <div className="text-center pt-4 border-t border-slate-200/60">
-                                <p className="text-sm text-slate-500 font-light">
+                            <div className="text-center pt-4 border-t border-slate-700">
+                                <p className="text-sm text-slate-400 font-medium">
                                     Required fields are marked with * • All submissions are encrypted
                                 </p>
                             </div>
@@ -226,8 +229,8 @@ const Form = () => {
 
                         {/* Error Display */}
                         {error && (
-                            <div className="mt-6 p-4 bg-gradient-to-r from-red-50/50 to-red-100/30 backdrop-blur-sm rounded-xl border border-red-200/60">
-                                <p className="text-sm text-red-600 font-medium">
+                            <div className="mt-6 p-4 bg-gradient-to-r from-red-900/20 to-red-800/10 backdrop-blur-sm rounded-lg border border-red-700">
+                                <p className="text-sm text-red-400 font-semibold">
                                     Please check your connection and try again
                                 </p>
                             </div>
@@ -236,22 +239,22 @@ const Form = () => {
                 </div>
 
                 {/* Additional Contact Options */}
-                <div className="mt-12 pt-8 border-t border-slate-200/60">
+                <div className="mt-12 pt-8 border-t border-slate-700">
                     <div className="text-center">
-                        <p className="text-slate-600 font-light mb-4">
+                        <p className="text-slate-400 font-medium mb-4">
                             Prefer a different method? Use direct contact options below
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <a 
                                 href="mailto:njokusamuel2005@gmail.com" 
-                                className="inline-flex items-center justify-center px-6 py-3 bg-white/80 hover:bg-white text-slate-700 font-medium rounded-xl border border-slate-200/60 hover:border-slate-300 transition-all duration-300 text-sm"
+                                className="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-br from-slate-800 to-slate-900 text-slate-300 font-semibold rounded-lg border border-slate-700 hover:border-cyan-500/50 transition-all duration-300 text-sm"
                             >
                                 <FiMail className="w-4 h-4 mr-2" />
                                 Send Email
                             </a>
                             <a 
                                 href="tel:08058586759" 
-                                className="inline-flex items-center justify-center px-6 py-3 bg-white/80 hover:bg-white text-slate-700 font-medium rounded-xl border border-slate-200/60 hover:border-slate-300 transition-all duration-300 text-sm"
+                                className="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-br from-slate-800 to-slate-900 text-slate-300 font-semibold rounded-lg border border-slate-700 hover:border-purple-500/50 transition-all duration-300 text-sm"
                             >
                                 <FiSend className="w-4 h-4 mr-2" />
                                 Call Directly

@@ -30,7 +30,7 @@ cloudinary.config({
 const storage = new CloudinaryStorage({
   cloudinary: cloudinary,
   params: {
-    folder: "portfolio_projects",
+    folder: "kubiat_projects",
     allowed_formats: ["jpg", "png", "jpeg"],
   },
 });
