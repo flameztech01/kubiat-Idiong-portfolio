@@ -190,7 +190,7 @@ const Contact = () => {
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a 
-                  href="mailto:njokusamuel2005@gmail.com" 
+                  href="mailto:KubiatIdiong111@gmail.com" 
                   className="group relative inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-cyan-500 to-purple-500 text-white font-bold rounded-xl hover:opacity-90 transition-all duration-300 shadow-lg overflow-hidden min-w-[200px]"
                 >
                   <div className="absolute inset-0 bg-gradient-to-r from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -201,7 +201,7 @@ const Contact = () => {
                 </a>
                 
                 <a 
-                  href="tel:08058586759" 
+                  href="tel:09124582415" 
                   className="group inline-flex items-center justify-center px-8 py-4 bg-slate-800 text-white font-bold rounded-xl border-2 border-slate-700 hover:border-cyan-500/50 transition-all duration-300 shadow-lg min-w-[200px]"
                 >
                   <FiPhone className="w-5 h-5 mr-3" />
