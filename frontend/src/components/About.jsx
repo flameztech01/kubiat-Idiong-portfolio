@@ -7,7 +7,7 @@ const About = () => {
   const resumePath = "/Curriculum Vitae - Njoku Samuel.pdf";
   
   const metrics = [
-    { value: "4+", label: "Years Experience" },
+    { value: "10+", label: "Years Experience" },
     { value: "50+", label: "Projects" },
     { value: "2", label: "Ventures" },
     { value: "100%", label: "Satisfaction" }

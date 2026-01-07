@@ -246,14 +246,14 @@ const Form = () => {
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <a 
-                                href="mailto:njokusamuel2005@gmail.com" 
+                                href="mailto:KubiatIdiong111@gmail.com" 
                                 className="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-br from-slate-800 to-slate-900 text-slate-300 font-semibold rounded-lg border border-slate-700 hover:border-cyan-500/50 transition-all duration-300 text-sm"
                             >
                                 <FiMail className="w-4 h-4 mr-2" />
                                 Send Email
                             </a>
                             <a 
-                                href="tel:08058586759" 
+                                href="tel:09124582415" 
                                 className="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-br from-slate-800 to-slate-900 text-slate-300 font-semibold rounded-lg border border-slate-700 hover:border-purple-500/50 transition-all duration-300 text-sm"
                             >
                                 <FiSend className="w-4 h-4 mr-2" />

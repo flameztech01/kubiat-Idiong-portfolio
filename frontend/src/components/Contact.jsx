@@ -50,7 +50,7 @@ const Contact = () => {
               
               <span className="text-sm font-medium text-slate-400 uppercase tracking-wider">Direct Call</span>
               <p className="text-2xl font-bold text-white mt-2 group-hover:text-cyan-300 transition-colors duration-300">
-                08058586759
+                09124582415
               </p>
               
               <a 
@@ -85,7 +85,7 @@ const Contact = () => {
                 href="mailto:njokusamuel2005@gmail.com" 
                 className="text-lg font-bold text-white mt-2 group-hover:text-purple-300 transition-colors duration-300 block break-all hover:text-purple-400"
               >
-                njokusamuel2005@gmail.com
+                KubiatIdiong111@gmail.com
               </a>
               
               <a 
@@ -117,9 +117,9 @@ const Contact = () => {
               
               <span className="text-sm font-medium text-slate-400 uppercase tracking-wider">Based In</span>
               <p className="text-2xl font-bold text-white mt-2 group-hover:text-cyan-300 transition-colors duration-300">
-                Rivers State
+                Akwaibom State
               </p>
-              <p className="text-slate-400 mt-1">Port Harcourt, Nigeria</p>
+              <p className="text-slate-400 mt-1">Uyo, Nigeria</p>
               
               <a 
                 href="https://maps.google.com/?q=Port+Harcourt,Rivers+State" 

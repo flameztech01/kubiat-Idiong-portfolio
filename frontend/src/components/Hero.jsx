@@ -247,7 +247,7 @@ const Hero = () => {
                     </div>
                     <div>
                       <div className="text-xs text-slate-500 uppercase tracking-wider">Contact</div>
-                      <div className="text-white group-hover:text-cyan-300 transition-colors">kubiat.idiong@example.com</div>
+                      <div className="text-white group-hover:text-cyan-300 transition-colors">KubiatIdiong111@gmail.com</div>
                     </div>
                   </a>
                   
