@@ -203,18 +203,18 @@ const Navbar = () => {
                     Direct Contact
                   </p>
                   <a 
-                    href="tel:08058586759"
+                    href="tel:09124582415"
                     className="flex items-center text-sm text-slate-600 hover:text-slate-900 transition-colors duration-300"
                   >
                     <span className="w-2 h-2 bg-slate-300 rounded-full mr-2"></span>
-                    0805 858 6759
+                    0912 458 2415
                   </a>
                   <a 
-                    href="mailto:njokusamuel2005@gmail.com"
+                    href="mailto:KubiatIdiong111@gmail.com"
                     className="flex items-center text-sm text-slate-600 hover:text-slate-900 transition-colors duration-300"
                   >
                     <span className="w-2 h-2 bg-slate-300 rounded-full mr-2"></span>
-                    njokusamuel2005@gmail.com
+                    KubiatIdiong111@gmail.com
                   </a>
                 </div>
               </div>

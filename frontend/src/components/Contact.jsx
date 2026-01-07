@@ -54,7 +54,7 @@ const Contact = () => {
               </p>
               
               <a 
-                href="tel:08058586759" 
+                href="tel:09124582415" 
                 className="group/link inline-flex items-center text-cyan-400 hover:text-cyan-300 font-semibold mt-6 text-sm transition-colors duration-300"
               >
                 <span className="relative">
@@ -82,14 +82,14 @@ const Contact = () => {
               
               <span className="text-sm font-medium text-slate-400 uppercase tracking-wider">Email Address</span>
               <a 
-                href="mailto:njokusamuel2005@gmail.com" 
+                href="mailto:KubiatIdiong111@gmail.com" 
                 className="text-lg font-bold text-white mt-2 group-hover:text-purple-300 transition-colors duration-300 block break-all hover:text-purple-400"
               >
                 KubiatIdiong111@gmail.com
               </a>
               
               <a 
-                href="mailto:njokusamuel2005@gmail.com" 
+                href="mailto:KubiatIdiong111@gmail.com" 
                 className="group/link inline-flex items-center text-purple-400 hover:text-purple-300 font-semibold mt-6 text-sm transition-colors duration-300"
               >
                 <span className="relative">
@@ -117,9 +117,9 @@ const Contact = () => {
               
               <span className="text-sm font-medium text-slate-400 uppercase tracking-wider">Based In</span>
               <p className="text-2xl font-bold text-white mt-2 group-hover:text-cyan-300 transition-colors duration-300">
-                Akwaibom State
+                Federal Capital Territory
               </p>
-              <p className="text-slate-400 mt-1">Uyo, Nigeria</p>
+              <p className="text-slate-400 mt-1">Abuja, Nigeria</p>
               
               <a 
                 href="https://maps.google.com/?q=Port+Harcourt,Rivers+State" 
