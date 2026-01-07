@@ -121,7 +121,7 @@ const About = () => {
                     <div className="w-2 h-2 rounded-full bg-cyan-400"></div>
                     <span className="text-slate-300">{skill}</span>
                     <div className="flex-1 h-px bg-slate-700"></div>
-                    <span className="text-sm text-slate-400">201{8+i}</span>
+                    <span className="text-sm text-slate-400">201{5+i}</span>
                   </div>
                 ))}
               </div>
