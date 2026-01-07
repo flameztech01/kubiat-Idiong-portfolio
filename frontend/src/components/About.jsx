@@ -4,7 +4,7 @@ import { GoGraph } from 'react-icons/go';
 import { AiOutlineRocket } from 'react-icons/ai';
 
 const About = () => {
-  const resumePath = "/Curriculum Vitae - Njoku Samuel.pdf";
+  const resumePath = "/Curriculum Vitae - Kubiat Idiong.pdf";
   
   const metrics = [
     { value: "10+", label: "Years Experience" },
@@ -40,7 +40,7 @@ const About = () => {
     e.preventDefault();
     const link = document.createElement('a');
     link.href = resumePath;
-    link.download = "Njoku_Samuel_CV.pdf";
+    link.download = "Kubiat_Idiong_CV.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
